@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: manage issue
-        run: echpo "${{toJSON(github.event)}}"
+        run: echo "${{toJSON(github.event)}}"
