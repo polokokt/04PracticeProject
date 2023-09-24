@@ -1,0 +1,8 @@
+name: Issues manager
+on: issues
+jobs:
+  output-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: manage issue
+        run: echpo "${{toJSON(github.event)}}"
