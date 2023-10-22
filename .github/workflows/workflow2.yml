@@ -1,7 +1,8 @@
 name: Deploy Project 2
 on: 
   pull_request:
-    - opened
+    types:
+      - opened
   workflow_dispatch:
 jobs:
   lint:
